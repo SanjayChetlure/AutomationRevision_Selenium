@@ -10,6 +10,8 @@ public class Ex1_OpenBrowser
     public static void main(String[] args) {
 
         WebDriver driver=new EdgeDriver();
+//        ChromeDriver driver=new ChromeDriver();
+//        driver.
 
     }
 }
