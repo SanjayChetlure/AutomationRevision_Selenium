@@ -1,10 +1,10 @@
-package S2_Listbox;
+package Listbox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-public class ex3_isMultiple2
+public class ex4_getSeletedOption1_from_singleSelectableListbox
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
@@ -18,17 +18,14 @@ public class ex3_isMultiple2
 		WebElement month = driver.findElement(By.xpath("//select[@id='month']"));
 		
 		Select s=new Select(month);
-
-		boolean result = s.isMultiple();
-		System.out.println(result);
 		
-		if (result) 
-		{
-			System.out.println("Listbox is multi-selectable");
-		}
-		else
-		{
-			System.out.println("Listbox is single-selectable");
-		}		
+		//System.out.println(s.getFirstSelectedOption().getText());
+		
+		String text = s.getFirstSelectedOption().getText();
+		System.out.println(text);
+
+//		WebElement s1 = s.getFirstSelectedOption();
+//		String text = s1.getText();
+//		System.out.println(text);
 	}
 }
