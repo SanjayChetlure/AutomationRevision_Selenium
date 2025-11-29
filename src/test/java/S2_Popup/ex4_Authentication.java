@@ -1,4 +1,4 @@
-package Popup;
+package S2_Popup;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

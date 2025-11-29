@@ -1,4 +1,4 @@
-package Popup;
+package S2_Popup;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,12 +21,12 @@ public class ex2_AlertPopup2
 		//switch to alert popup
 		Alert alt = driver.switchTo().alert();
 		
-		//gettText from alert popup
+		//getText from alert popup
 		String text = alt.getText();
 		System.out.println(text);
 		
 		//click on cancel btn from alert popup
-		//alt.dismiss();
+//		alt.dismiss();
 		
 //		//click on OK btn from 1st alert popup
 		alt.accept();
@@ -36,6 +36,6 @@ public class ex2_AlertPopup2
 		alt.accept();
 		
 		//enter value in alert popup
-		//alt.sendKeys("abc");
+//		alt.sendKeys("abc");
 	}
 }

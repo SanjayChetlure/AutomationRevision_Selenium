@@ -1,4 +1,4 @@
-package Popup;
+package S2_Popup;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;

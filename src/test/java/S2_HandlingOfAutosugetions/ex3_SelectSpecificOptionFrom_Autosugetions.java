@@ -1,4 +1,4 @@
-package HandlingOfAutosugetions;
+package S2_HandlingOfAutosugetions;
 import java.util.List;
 
 import org.openqa.selenium.By;

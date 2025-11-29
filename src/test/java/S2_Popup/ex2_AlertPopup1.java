@@ -1,4 +1,4 @@
-package Popup;
+package S2_Popup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,12 +16,12 @@ public class ex2_AlertPopup1
 		//click on submit btn
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 		
-		//gettText from alert popup
+		//getText from alert popup
 		String text = driver.switchTo().alert().getText();
 		System.out.println(text);
 		
-		//click on cancel btn from alert popup
-		//driver.switchTo().alert().dismiss();
+//		click on cancel btn from alert popup
+//		driver.switchTo().alert().dismiss();
 		
 		//click on OK btn from 1st alert popup
 		driver.switchTo().alert().accept();
