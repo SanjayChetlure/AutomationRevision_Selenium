@@ -1,4 +1,4 @@
-package HandlingOfCustomizedListbox;
+package S2_HandlingOfCustomizedListbox;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

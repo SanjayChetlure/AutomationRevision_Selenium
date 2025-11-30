@@ -1,8 +1,8 @@
-package ActionClass;
+package S2_ActionClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-public class ex7_ScrollToElement
+public class ex7_ScrollByAmount
 {
 	public static void main(String[] args) throws InterruptedException
 	{

@@ -1,9 +1,10 @@
-package HandlingOfDynamicElements;
+package S2_HandlingOfDynamicElements;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-public class ex2_getReviewsFromFlipkartApp 
+
+public class ex1_getRatingsFromFlipkartApp 
 {
 	public static void main(String[] args) {
 		
@@ -17,7 +18,7 @@ public class ex2_getReviewsFromFlipkartApp
 		//click on search icon
 		driver.findElement(By.xpath("//button[@class='_2iLD__']")).click();
 		
-		String review = driver.findElement(By.xpath("((//div[@class='tUxRFH'])[1]//span)[8]")).getText();
-		System.out.println(review);
+		String ratings = driver.findElement(By.xpath("((//div[@class='jIjQ8S'])[1]//span[@class='PvbNMB']//span)[2]")).getText();
+		System.out.println(ratings);
 	}
 }

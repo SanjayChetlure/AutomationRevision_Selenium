@@ -1,4 +1,4 @@
-package MethodWithReturnType;
+package S1_MethodWithReturnType;
 
 public class Demo1
 {

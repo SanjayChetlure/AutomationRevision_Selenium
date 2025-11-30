@@ -1,4 +1,4 @@
-package ActionClass;
+package S2_ActionClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +20,6 @@ public class ex5_MouseDragAndDropAction
 		Actions act=new Actions(driver);
 		
 		act.dragAndDrop(source, dest).perform();
-		//act.moveToElement(source).clickAndHold().moveToElement(dest).release().build().perform();
+		//act.moveToElement(source).clickAndHold().moveToElement(dest).release().perform();
 	}
 }

@@ -1,28 +1,26 @@
-package ActionClass;
+package S2_ActionClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-public class ex1_HandleDropdown 
+public class ex3_MouseLeftClickAction
 {
 	public static void main(String[] args) throws InterruptedException
 	{
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
+		Thread.sleep(2000);
 		
-		//step1: 
-		WebElement element = driver.findElement(By.xpath("//div[@class='H6-NpN _3N4_BX']"));
-		
-		//step2:
+		WebElement Minutes = driver.findElement(By.xpath("//span[text()='Minutes']"));
 		Actions act=new Actions(driver);
 		
-		//step3:
-		act.moveToElement(element).perform();
+//		act.moveToElement(electronicsLink).perform();
+//		act.click().perform();
 		
-		Thread.sleep(3000);
+	//	act.moveToElement(electronicsLink).click().perform();
 		
-		//click on orders link
-		driver.findElement(By.xpath("(//li[@class='AT0fUR'])[2]")).click();
+		act.click(Minutes).perform();
 	}
 }
